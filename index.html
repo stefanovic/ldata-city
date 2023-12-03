@@ -3953,7 +3953,22 @@ a:hover {
       
           </div>
 
-          
+       <script>
+
+const contentful = require('contentful')
+
+const client = contentful.createClient({
+  space: 'ot4vkuehzkq4',
+  environment: 'master', // defaults to 'master' if not set
+  accessToken: 'GHbPdILzxLkTyqE30Uv29jp5QmwiYaRc5WJjV3AOTHI'
+})
+
+client.getEntry('62BKfAhtlvWrxGpZvoJOV2')
+  .then((entry) => console.log(entry))
+  .catch(console.error)
+
+	       
+       </script>   
         
      
 
